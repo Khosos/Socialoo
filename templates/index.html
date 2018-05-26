@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Personal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container main-body">
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="content">
+				<h1>Event Personal</h1>
+				<h3>Matching events in your area to your personality</h3>
+				<hr>
+				
+				<div class="form mx-auto">
+				  <form action="/login" method="POST">
+                  <div class="form-group">
+                <input name="twittername" type="text" class="form-control" id="twitterHandle" placeholder="Enter Twitter Name">
+                <div class="col-auto my-1 pl-0">
+      <div class="custom-control custom-checkbox mr-sm-2">
+        <input name="check" type="checkbox" class="custom-control-input" id="customControlAutosizing">
+        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+      </div>
+    </div>
+                </div>
+                <a>
+                    <button type="submit" class="btn btn-primary float-left">Submit</button>
+                </a>
+                </form>  
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+   <footer class="footer">
+      <div class="container">
+        <a href="#">
+            <span class="text-muted"><i class="fab fa-github"></i> GitHub</span>    
+        </a>
+      </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
